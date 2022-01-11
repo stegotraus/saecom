@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SAE.css">
+    <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="logo_final.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+
+    <title>Final Blow - Paris</title>
+</head>
+<body class="paris">
+<header>
+<nav>
+    <a href="accueil(fichier_a_ouvrir).html">
+        <img id="img0" src="logo_final_transparent.png">
+        <div id="titrelogo">
+            <h1>Final Blow</h1>
+        </div>
+    </a>    
+    <ul class="ul">
+        <li><a href="accueil(fichier_a_ouvrir).html" target="blank">Accueil</a></li>
+        <li><a href="#">Notre agence</a></li>
+        <li class="deroulant"><a href="#">Destination</a>
+            <ul class="sous">
+                <li><a href="paris.html">Paris</a></li>
+                <li><a href="barcelone.html">Barcelone</a></li>
+                <li><a href="amsterdam.html">Amsterdam</a></li>
+                <li><a href="oslo.html">Oslo</a></li>
+                <li><a href="madrid.html">Madrid</a></li>
+                <li><a href="rome.html">Rome</a></li>
+            </ul>
+        </li>
+        <li class="deroulant"><a href="#">Nos prestations</a>
+            <ul class="sous">
+                <li><a href="#">Activités en plein air</a></li>
+                <li><a href="#">Activités en intérieur</a></li>
+            </ul>
+        </li>
+        <li class="deroulant"><a href="#">Votre profil (questionnaire?)</a>
+            <ul class="sous">
+                <li><a href="https://docs.google.com/forms/d/1OF3A0odbxWfu07YBhyeBf8YPXbNRabMK5B2kSISQcg4/prefill" target="_blank">Questionnaire</a></li>
+                <li><a href="#">Nos statistiques</a></li>
+            </ul>
+        </li>
+        <li class="deroulant"><a href="#">Qui sommes nous?</a>
+            <ul class="sous">
+                <li><a href="membre.html">Membres</a></li>
+                <li><a href="https://www.google.fr/maps/place/IUT+de+Lens+-+Universite+d'Artois/@50.4374269,2.8072427,17z/data=!3m1!4b1!4m5!3m4!1s0x47dd308a7c58a0ef:0xf3d8ea1d73a955e!8m2!3d50.4374269!4d2.8094314">Lieu</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<!-- _______________________barre de recherche________________________-->
+    <form id="searchbox" method="get" action="/search">
+        <input name="q" type="text" size="20" placeholder="Taper ici"/>
+        <input id="button-submit" type="submit" value="Rechercher" />
+    </form>
+<!--_________________________fin barre de recherche___________________-->
+</header>
+                
+
+<!--____________________slide paris_____________________________________-->
+
+<blockquote class="slide_paris">
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="feteparis1.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="feteparis2.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="feteparis3.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+    </div>
+    <br>
+
+
+    <script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 6000);
+    
+}
+    </script>
+</blockquote>
+
+<!--___________________fin slide paris__________________________________-->
+
+<section id="mid_paris">
+    <article class="art_paris">
+        <section>
+            <h1>Bienvenue à Paris</h1>
+            <p>
+                Elle se situe au cœur d'un vaste bassin sédimentaire aux sols fertiles et au climat tempéré, le bassin parisien, sur une boucle de la Seine, entre les confluents de celle-ci avec la Marne et l'Oise. Paris est également le chef-lieu de la région Île-de-France et le centre de la métropole du Grand Paris, créée en 2016. Elle est divisée en arrondissements, comme les villes de Lyon et de Marseille, au nombre de vingt. Administrativement, la ville constitue depuis le 1er janvier 2019 une collectivité à statut particulier nommée « Ville de Paris » (auparavant, elle était à la fois une commune et un département). L'État y dispose de prérogatives particulières exercées par le préfet de police de Paris. La ville a connu de profondes transformations sous le Second Empire dans les décennies 1850 et 1860 à travers d'importants travaux consistant notamment au percement de larges avenues, places et jardins et la construction de nombreux édifices, dirigés par le baron Haussmann, donnant à l'ancien Paris médiéval le visage qu'on lui connait de nos jours.
+
+            </p>
+        </section>
+    </article>
+</section>
+
+<section class="footer">
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <h3><img src="logo_final_transparent.png" width="250px">Final<span>Blow</span> </h3>
+
+        <p class="footer-links">
+            <a href="#" class="link-1">Accueil</a>
+        
+            <a href="#">Prix</a>
+        
+            <a href="#">A propos</a>
+            
+            <a href="#">Faq</a>
+            
+            <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Final Blow © 2021</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Route de béthune</span> Lens, France</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+33 4 75 46 98 09</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:final@blow.com">final@blow.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>A propos de nous</span>
+            Nous sommes une société organisant des enterrements de vies de célibataires.
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+    </div>
+
+</footer>
+</section>
+</body>
+</html>
