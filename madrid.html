@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="SAE.css">
+    <link rel="stylesheet" href="SAE.css">
     <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="logo_final.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
 
-    <title>Final Blow - madrid</title>
+    <title>Final Blow - Madrid</title>
 </head>
 <body class="madrid">
 <header>
 <nav>
-    <a href="accueil(fichier_a_ouvrir).html">
-        <img id="img0" src="logo_final_transparent.png">
+    <a href="index.html">
+        <img id="img0" alt="logo" src="logo_final_transparent.png">
         <div id="titrelogo">
             <h1>Final Blow</h1>
         </div>
     </a>    
     <ul class="ul">
-        <li><a href="accueil(fichier_a_ouvrir).html" target="blank">Accueil</a></li>
-        <li><a href="#">Notre agence</a></li>
-        <li class="deroulant"><a href="#">Destination</a>
+        <li><a href="index.html" target="blank">Accueil</a></li>
+        <li class="deroulant"><a href="#">Destinations</a>
             <ul class="sous">
                 <li><a href="paris.html">Paris</a></li>
                 <li><a href="barcelone.html">Barcelone</a></li>
@@ -35,20 +35,20 @@
         </li>
         <li class="deroulant"><a href="#">Nos prestations</a>
             <ul class="sous">
-                <li><a href="#">Activités en plein air</a></li>
-                <li><a href="#">Activités en intérieur</a></li>
+                <li><a href="prestext.html">Activités en plein air</a></li>
+                <li><a href="prestint.html">Activités en intérieur</a></li>
             </ul>
         </li>
         <li class="deroulant"><a href="#">Votre profil (questionnaire?)</a>
             <ul class="sous">
                 <li><a href="https://docs.google.com/forms/d/1OF3A0odbxWfu07YBhyeBf8YPXbNRabMK5B2kSISQcg4/prefill" target="_blank">Questionnaire</a></li>
-                <li><a href="#">Nos statistiques</a></li>
+                <li><a href="stat.html">Nos statistiques</a></li>
             </ul>
         </li>
         <li class="deroulant"><a href="#">Qui sommes nous?</a>
             <ul class="sous">
                 <li><a href="membre.html">Membres</a></li>
-                <li><a href="https://www.google.fr/maps/place/IUT+de+Lens+-+Universite+d'Artois/@50.4374269,2.8072427,17z/data=!3m1!4b1!4m5!3m4!1s0x47dd308a7c58a0ef:0xf3d8ea1d73a955e!8m2!3d50.4374269!4d2.8094314">Lieu</a></li>
+                <li><a href="https://www.google.fr/maps/place/IUT+de+Lens+-+Universite+d'Artois/@50.4374269,2.8072427,17z/data=!3m1!4b1!4m5!3m4!1s0x47dd308a7c58a0ef:0xf3d8ea1d73a955e!8m2!3d50.4374269!4d2.8094314" target="_blank">Lieu</a></li>
             </ul>
         </li>
     </ul>
@@ -61,69 +61,43 @@
     </form>
 <!--_________________________fin barre de recherche___________________-->
 </header>
-                
+                        
 <!--____________________slide madrid_____________________________________-->
 
 <blockquote class="slide_madrid">
     <div class="slideshow-container">
 
         <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="fetemadrid1.jpg" style="width:100%">
+            <div class="numbertext">1 / 2</div>
+            <img src="madrid1.jpg" alt="madrid" style="width:100%">
             <div class="text"></div>
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="#" style="width:100%">
+            <div class="numbertext">2 / 2</div>
+            <img src="madrid2.webp" alt="mardidplusbo" style="width:100%">
             <div class="text"></div>
         </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="#" style="width:100%">
-            <div class="text"></div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
 
     <script>
-        var slideIndex = 1;
-    showSlides(slideIndex);
+    var slideIndex = 0;
+showSlides();
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
     }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 6000);
+    
+}
     </script>
 </blockquote>
 
@@ -150,7 +124,7 @@
 
     <div class="footer-left">
 
-        <h3><img src="logo_final_transparent.png" width="250px">Final<span>Blow</span> </h3>
+        <h3><a href="index.html"><img src="logo_final_transparent.png" alt="logo" width="250"></a>Final<span>Blow</span> </h3>
 
         <p class="footer-links">
             <a href="#" class="link-1">Accueil</a>
@@ -190,7 +164,7 @@
 
         <p class="footer-company-about">
             <span>A propos de nous</span>
-            Nous sommes une société organisant des enterrements de vie de célibataire.
+            Nous sommes une société organisant des enterrements de vies de célibataires.
         </p>
 
         <div class="footer-icons">
